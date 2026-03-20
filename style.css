@@ -1,0 +1,420 @@
+h3{
+    color: rgb(58, 125, 250);
+}
+p{
+    color:rgb(68, 133, 135)
+}
+button1{
+    background-color: rgb(95, 100, 162);;
+    color:rgb(175, 248, 252)
+}
+ body{
+     background-color: rgb(27, 22, 22);
+     background-color:#ffff00;
+}
+
+/* Universal Selector  */
+/* *{
+   color:rgb(0, 0, 0);
+} */
+
+/*element selector*/
+h1{
+    color: blueviolet;
+}
+
+/*Id selector*/
+#My_heading1{
+    color: blue;
+}
+
+#My_heading2{
+    color: rgb(47, 174, 247);
+}
+
+/*Class selector*/
+.myClass{
+    color: rgb(51, 110, 74);
+}
+
+
+/*sample practice set 1*/
+/*Q.1:Create simple div with an id "box".Add some text content inside the div.Set its background color to blue.*/
+/*both dix and id selector can work*/
+
+/* div{
+    background-color: black;
+} */
+
+#box{
+    background-color: rgb(32, 147, 164);
+}
+
+
+/*Q.2:Create 3 headings with h4,h5,h6.Give them all a class "heading" & set color of "heading" to red.*/
+/*Both techniques can work*/
+.heading{
+    color: red;
+}
+
+h4,h5,h6{
+    color: red;
+}
+
+
+/*Q.3:Create a button and set its background color to:
+(i)green using css stylesheet
+(ii)blue using <style>tag
+(iii)pink using inline style*/
+button{
+    background-color: green;
+}
+
+
+/*text-align:left/right/center*/
+p{
+    text-align: center
+}
+
+/*text-decoration*/
+h6{
+    text-align: center;
+    text-decoration:red dotted underline;
+
+}
+
+/*By default anchor tag gives underline so i want to remove the underline*/
+a{
+    text-decoration: none;/*so now there is no underline*/
+}
+
+
+/*font-weight(normal/lighter/bold/bolder/100-900)*/
+#h1{
+    font-weight: bolder;
+}
+#h2{
+    font-weight: 600;
+}
+#h3{
+    font-weight: lighter;
+}
+#h4{
+    font-weight: 800;
+}
+
+
+/*font-family:arial/roboto/...*/
+#two{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#one{
+    font-family: serif;
+}
+
+
+/*Units(absolute and relative)*/
+/*line-height*/
+/*text-transform(uppercase/lowercase/capitalize/none)*/
+#one{
+    font-size:larger;
+    line-height: normal;
+    text-transform: uppercase;
+}
+#two{
+    font-size:smaller;
+    line-height: 20px;
+    text-transform: lowercase;
+}
+
+/*relative(%, em, rem)*/
+/*1st explain %*/
+#box1{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    width:2rem;/*rem means 2 * size of root element*/
+}
+#box2{
+    height: 50px;
+    background-color: yellow;
+    width:30%;/*i.e box2 is 30% of box1*/
+    font-size: 2em;/*2em means 2 times of 1st one*/
+    width:2em;/*2* size of itself*/
+}
+
+
+
+/*practice set 2*/
+/*Q.1tm:Create a heading centred on the page with all of its text capitalized by default*/
+HTML{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+/*Q.2:Set the font family of all the content in the document to "Times New Roman"*/
+*{
+    font-family:'Times New Roman';
+}
+
+/*Q.3:Create one div inside another div.Set id & text "outer" for the first one & "inner" for the second one.Set the outer div text size to 25px & inner div text size to 10px.*/
+#outer{
+    font-size: 25px;
+}
+#inner{
+    font-size: 10px;
+}
+
+
+
+/*Box-model css*/
+/*Height in box model,  width, border(border-width,border-style,border-color, border-radius), padding, margin*/
+#this{
+    height:50px;
+    background-color: pink;
+    width:100px;
+    border-width: 2px;
+    border-color: black;
+    border-style: dotted;
+    text-align: center;
+    border:2px solid red;/*border shorthand*/
+    border-radius: 20px;/*can be in percentage*/
+    padding-left: 20%;
+    padding:50px;/*shorthand padding done from all directions clockwise*/
+    margin-bottom: 50px;
+    /* margin:50px;shorthand all direction clockwise */
+}
+
+
+/*Practice set 3*/
+/*Q.1.Create a div with height & width of 100px.set its background color to green and the border radius to 50%.*/
+#amazon{
+    height: 100px;
+    width:100px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+
+/*Q.2.Create a navbar*/
+#navbar{
+    padding: 0;
+    margin: 0px;
+    height: 60px;
+    background-color: black;
+    color: rgb(241, 248, 248);
+}
+button{
+    background-color: #ffbb00;
+}
+#logo{
+    color: #ffbb00;
+    font-size: 25px;
+}
+a{
+    margin-right: 200px;
+    text-decoration: none;
+}
+
+
+/*display-property(inline,block,inline-block,none)*/
+/*visibility-property*/
+#tech{
+    background-color: brown;/*block element by default*/
+    display: inline;
+}
+#free{
+    background-color: aquamarine;/*inline element bydefault*/
+    display: block;
+}
+
+
+
+h1{
+    text-align: center;
+    color: black;
+}
+
+#AA{
+    background-color:orchid;
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+    padding: 25px;
+    display: inline-block;
+}
+#BB{
+    background-color:darkorchid;
+    width:100px;
+    height: 100px;
+    margin: 25px;
+    padding: 25px;
+    display: inline-block;
+}
+#CC{
+    background-color:grey;
+    width:100px;
+    height: 100px;
+    margin: 25px;
+    padding: 25px;
+    display: inline-block;
+}  
+
+#BB{
+    visibility: hidden;
+}
+
+
+
+/*alpha channel(0-1)
+1:deepest
+0:lightest*/
+#alpha{
+    color:rgba(255,0,0,1);
+}
+
+
+
+/*practice set 4*/
+/*Q1:Create a webpage layout with a header, a footer & a content area containing 3 divs.
+Set the height & width of divs to 100px.
+(add the previous navbar in the header)*/
+.contentBox{
+    height: 500px;
+    width: 100px;
+    border: 2px solid black;
+    display: inline-block;
+}
+
+#content{
+    height:500px;
+}
+
+
+footer{
+    background-color: #023153;
+    color: white;
+}
+
+
+
+/*position*/
+/*z-index:decides stack level of element*/
+#Box1{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: solid 2px red;
+    display: inline-block;
+    position: static ;/*no change*/
+}
+
+#Box2{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(151, 237, 89);
+    border: 2px solid steelblue;
+    display: inline-block;
+    position:relative ;/*using relative we can shift box from top,left ,right,bottom of itself*/
+    top:20px;
+    left:10px;
+    z-index:1;
+}
+
+
+#Box3{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(241, 124, 69);
+    border: 2px solid rgb(51, 110, 74);
+    display: inline-block;
+    position: absolute;
+    top:3200px;
+}
+#Box4{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(193, 85, 247);
+    border: 2px solid royalblue;
+    display: inline-block;
+    position: fixed;
+    top:50px;
+    z-index: 3;
+}
+
+
+/*background-image:unsplash.com*/
+#Box1{
+    background-image: url("cat.jpg");
+    background-size:cover;
+}
+
+
+/*Practice Set 5*/
+/*Create the following layout using the given html.
+(i)Give the div a height, width & some background image.
+(ii)Use the appropriate position property for the div element to place it at the
+right end of the page. (The div should not move even on scroll)
+(iii)Use z-index to place the div on top of page.
+
+<p> lorem*5 </p>
+<div> Love Nature </div>
+<p> lorem*5 </p>*/
+
+#animals{
+    height: 100px;
+    width:100px;
+    background-image: url("cat.jpg");
+    background-size: cover;
+    position: fixed;
+    right: 0px;
+}
+
+
+
+
+/*flexbox:layout method for arranging items in rows or columns.
+flexbox direction:row/row-reverse/column/column-reverse*/
+body{
+    text-align: center;
+}
+#container{
+    height:200px;
+    align-items: center;
+    width:1000px;
+    display: inline-block;
+    border:2px solid black;
+    display: flex;
+    flex-direction:row ;
+    justify-content: center;
+}
+#BOX1{
+    background-color: aqua;
+    height: 100px;
+    width: 160px;
+    display: inline-block;
+}
+#BOX2{
+    background-color: crimson;
+    height: 100px;
+    width: 160px;
+    display: inline-block;
+}
+#BOX3{
+    background-color: cornflowerblue;
+    height: 100px;
+    width: 160px;
+    display: inline-block;
+}
+#BOX4{
+    background-color: darksalmon;
+    height: 100px;
+    width: 160px;
+    display: inline-block;
+}
+#BOX5{
+    background-color: dimgray;
+    height: 100px;
+    width: 160px;
+    display: inline-block;
+}
